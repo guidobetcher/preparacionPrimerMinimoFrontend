@@ -1,0 +1,14 @@
+<h1>
+  {{subject.name}}
+</h1>
+<br>
+<h2>
+  Students:
+</h2>
+<div *ngFor="let student of subject.students;">
+  <h2>
+    <a [title]="student.name + ' details'" [routerLink]="['/students', student.id]">
+      {{student.name}}
+    </a>
+  </h2>
+</div>
