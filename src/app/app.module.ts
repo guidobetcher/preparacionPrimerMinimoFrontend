@@ -24,7 +24,7 @@ import {SubjectService} from './services/subject.service';
     HttpClientModule,
     RouterModule.forRoot([
       { path: 'subjects', component: SubjectListComponent },
-      { path: 'subjects/:subjectId', component: SubjectDetailsComponent },
+      { path: 'subjects/:subject', component: SubjectDetailsComponent },
       { path: 'students/:studentId', component: StudentDetailsComponent },
     ])
   ],

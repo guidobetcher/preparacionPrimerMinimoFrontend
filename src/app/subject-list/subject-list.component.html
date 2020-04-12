@@ -1,6 +1,6 @@
-<div *ngFor="let subject of subjects;  as subjectId">
+<div *ngFor="let subject of subjects ; index as i">
   <h3>
-    <a [title]="subject.name + ' details'" [routerLink]="['/subjects', subjectId]">
+    <a [title]="subject.name + ' details'" [routerLink]="['/subjects/', subject._id]">
       {{subject.name}}
     </a>
   </h3>

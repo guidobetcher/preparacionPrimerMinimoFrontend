@@ -18,8 +18,8 @@ export class SubjectService {
     return this.http.get<Subject[]>(this.url + '/subjects');
   }
 
-  getSubjectById(subjectId: string): Observable<Subject> {
-    console.log('GETT SUBJECT WITH ID: ' + subjectId);
-    return this.http.get<Subject>(this.url + '/subjects/' + subjectId);
+  getSubjectById(subject: string): Observable<Subject> {
+    console.log('GET SUBJECT WITH ID: ' + subject);
+    return this.http.get<Subject>(this.url + '/subjects/' + subject);
   }
 }
